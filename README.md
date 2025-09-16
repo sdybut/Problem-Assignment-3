@@ -2,15 +2,16 @@
 
 ### Problem 1
 Using knowledge obtained from the experiment and demonstrations:<br/>
-  a. Load the corresponding .csv file into a data frame named cars using pandas<br/>
+  a. Load the corresponding .csv file into a data frame named cars using pandas.<br/>
   b. Display the first five and last five rows of the resulting cars.<br/>
 
  **Code**
 
-     import pandas as pd
+     import pandas as pd # import the Pandas library with the 'pd'
 
-     cars = pd.read_csv ('cars.csv')
-     cars
+     # a. Load the corresponding .csv file into a data frame named cars using pandas.
+     cars = pd.read_csv ('cars.csv') # Read a CSV file into a pandas DataFrame
+     cars # print 
      
  **Output**
   
@@ -21,8 +22,8 @@ Using knowledge obtained from the experiment and demonstrations:<br/>
 
  **Code**
 
-      cars.head (5)
-
+      # b. Display the first five rows of the resulting cars
+      cars.head (5) # print the first 5 rows
 
  **Output**
 
@@ -31,7 +32,8 @@ Using knowledge obtained from the experiment and demonstrations:<br/>
 
  **Code**
 
-     cars.tail (5)
+     # b. Display the last five rows of the resulting cars
+     cars.tail (5) # print the last 5 rows
 
 
  **Ouput**
@@ -40,7 +42,7 @@ Using knowledge obtained from the experiment and demonstrations:<br/>
 
 
  **Conclusion**
-
+    
 
 
 ### Problem 2
