@@ -36,6 +36,8 @@ Using knowledge obtained from the experiment and demonstrations:<br/>
 
  **Ouput**
 
+  <img width="679" height="230" alt="image" src="https://github.com/user-attachments/assets/b2b318ff-825e-40e8-b3cc-beda58d25352" />
+
 
  **Conclusion**
 
