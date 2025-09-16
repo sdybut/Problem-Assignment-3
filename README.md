@@ -14,11 +14,24 @@ Using knowledge obtained from the experiment and demonstrations:
      
  **Output**
   
-  <img width="474" height="343" alt="image" src="https://github.com/user-attachments/assets/5a470561-564d-4f87-a82c-c76e5bbb5d4e" /> 
+  <img width="474" height="343" alt="image" src="https://github.com/user-attachments/assets/5a470561-564d-4f87-a82c-c76e5bbb5d4e" /><br/> 
+
+  <img width="475" height="404" alt="image" src="https://github.com/user-attachments/assets/a7068abc-f79c-429e-8925-75a79e7a8b5a" />
+
+**Code**
+
+      cars.head (5)
+
+**Output**
+    <img width="466" height="133" alt="image" src="https://github.com/user-attachments/assets/cc2871c3-88ef-4786-b4bb-0657bee7bb64" />
+
+**Code**
+      cars.tail (5)
+
+**Output**
+    <img width="452" height="134" alt="image" src="https://github.com/user-attachments/assets/85e8f6ae-ee16-4bf7-a409-822752eff86b" />
 
 
+**Conclusion**
 
-
-  
-  <img width="475" height="434" alt="image" src="https://github.com/user-attachments/assets/57465e15-ac3f-4baa-b4e8-ba96b5bdaaca" />
 
