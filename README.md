@@ -47,8 +47,7 @@ Using knowledge obtained from the experiment and demonstrations:<br/>
 
 
 ### Problem 2
-Using the dataframe cars in problem 1, extract the following information using subsetting, slicing and 
-indexing operations.<br/>
+Using the dataframe cars in problem 1, extract the following information using subsetting, slicing and indexing operations.<br/>
   a. Display the first five rows with odd-numbered columns (columns 1, 3, 5, 7…) of cars.<br/>
   b. Display the row that contains the ‘Model’ of ‘Mazda RX4’.<br/>
   c. How many cylinders (‘cyl’) does the car model ‘Camaro Z28’ have?<br/>
@@ -56,10 +55,10 @@ indexing operations.<br/>
 
 **Code**
 
-    import pandas as pd
+    import pandas as pd # import the Pandas library with the 'pd'
 
-    cars = pd.read_csv ('cars.csv')
-    cars
+    cars = pd.read_csv ('cars.csv') # Read a CSV file into a pandas DataFrame
+    cars #print
 
 **Output**
   
@@ -70,9 +69,8 @@ indexing operations.<br/>
 
 **Code**
 
-    # a. Display the first five rows with odd-numbered columns (columns 1, 3, 5, 7…)
-    odd_columns = cars.iloc[0:5, [1, 3, 5, 7, 9, 11]]  # Select all 5 rows and input odd number from 0-11
-    odd_columns #print
+    # a. Display the first five rows with odd-numbered columns (columns 1, 3, 5, 7 9 11)
+    cars.iloc[0:5, [1, 3, 5, 7, 9, 11]]  # Integer position-based selection of rows/columns using .iloc[...] and input odd number from 0-11
 
 
 **Output**
@@ -83,8 +81,7 @@ indexing operations.<br/>
 **Code**
 
     # b. Display the row that contains the 'Model' of 'Mazda RX4'
-    mazda_rx4 = cars[cars['Model'] == 'Mazda RX4'] 
-    mazda_rx4
+    cars[cars['Model'] == 'Mazda RX4'] # filter DataFrame to show only the row with Model = 'Mazda RX4'
 
 **Output**
     
@@ -94,7 +91,7 @@ indexing operations.<br/>
 **Code**
 
     # c. How many cylinders ('cyl') does the car model 'Camaro Z28' have?
-    cars.loc[[23], ['Model', 'cyl']]
+    cars.loc[[23], ['Model', 'cyl']] # select row 23 and show only Model and cyl columns
 
 **Output**
 
@@ -105,9 +102,8 @@ indexing operations.<br/>
 
     # d. Determine how many cylinders ('cyl') and what gear type ('gear') do the car models 
     # 'Mazda RX4 Wag', 'Ford Pantera L' and 'Honda Civic' have
-    models = ['Mazda RX4 Wag', 'Ford Pantera L', 'Honda Civic']
-    result = cars.loc[cars['Model'].isin(models), ['Model', 'cyl', 'gear']]
-    result
+    models = ['Mazda RX4 Wag', 'Ford Pantera L', 'Honda Civic'] # list of selected models
+    cars.loc[cars['Model'].isin(models), ['Model', 'cyl', 'gear']] # filter DataFrame for those models and show Model, cyl, and gear
 
 
 **Output**
@@ -116,3 +112,6 @@ indexing operations.<br/>
 
 
 **Conclusion**
+
+To conclude, this Pandas program uses subsetting, slicing, and indexing to extract specific data from the cars DataFrame. The first task displayed the first five rows with odd-numbered columns using .iloc[]. The second task filtered the DataFrame to show the row of the car model Mazda RX4. The third task identified the number of cylinders of Camaro Z28 using .loc[]. Finally, the last task displayed both the cylinder count and gear type of Mazda RX4 Wag, Ford Pantera L, and Honda Civic. These operations demonstrate how Pandas makes it easy to access and analyze precise parts of a dataset.
+  
